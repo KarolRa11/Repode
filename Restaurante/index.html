@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante Pink - Agregar Pedido</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Restaurante Pink - Agregar Pedido</h1>
+    </header>
+    <div class="container">
+      <div>
+        <h2>Menú</h2>
+        <div class="menu-item">
+          <span> Panque - $70</span>
+          <button onclick="addToCart('Panque', 70)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>ensalada - $100</span>
+          <button onclick="addToCart('Ensalada', 100)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span> Limonada - $45</span>
+          <button onclick="addToCart('Limonada', 45)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Pastel de chocolate - $75</span>
+          <button onclick="addToCart('Pastel de chocolate',75)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Brownies - $50</span>
+          <button onclick="addToCart('Brownies',50)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Galletas - $50</span>
+          <button onclick="addToCart('Galletas',50)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Pastel de chocolate - $75</span>
+          <button onclick="addToCart('Pastel de chocolate',75)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Malteada - $85</span>
+          <button onclick="addToCart('Malteada 85)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Fresas con crema - $90</span>
+          <button onclick="addToCart('Fresas con crema', 90)">Agregar</button>
+        </div>
+      </div>
+      <div class="cart">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-items"></ul>
+        <strong>Total: $<span id="total">0</span></strong>
+      </div>
+      <div class="order-details" id="order-details" style="display: none">
+        <!-- Sección de detalles de pedido -->
+        <h3>Detalles del Pedido</h3>
+        <p id="order-name"></p>
+        <p id="order-address"></p>
+        <ul id="order-summary"></ul>
+        <strong>Total: $<span id="order-total"></span></strong>
+      </div>
+      <div class="form-container">
+        <h2>Información de Pedido</h2>
+        <input
+          type="text"
+          id="customer-name"
+          placeholder="Nombre Completo"
+          required
+        />
+        <input
+          type="text"
+          id="customer-address"
+          placeholder="Dirección"
+          required
+        />
+        <button onclick="submitOrder()">Enviar Pedido</button>
+      </div>
+    </div>
+    <script>
+      src = "./main.js";
+    </script>
+  </body>
+</html>
